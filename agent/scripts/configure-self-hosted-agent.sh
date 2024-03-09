@@ -83,7 +83,7 @@ sudo apt-get install -y -qq \
   git \
   iputils-ping \
   libcurl4 \
-  libicu67 \
+  libicu70 \
   libunwind8 \
   netcat \
   zip \
