@@ -1,5 +1,19 @@
 #!/bin/bash
 
+# Update the package lists
+sudo apt-get update
+
+# Install the software-properties-common package, which provides the add-apt-repository command
+sudo apt-get install -y software-properties-common
+
+# Add the correct repository for the Ubuntu version on the VM
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release -cs)-security main"
+
+# Update the package lists again
+sudo apt-get update
+
+# Rest of the script...
+
 # Add the missing GPG keys
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
