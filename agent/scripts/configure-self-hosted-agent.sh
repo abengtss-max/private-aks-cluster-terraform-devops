@@ -48,10 +48,11 @@ echo "APT::Get::Assume-Yes \"true\";" | sudo tee /etc/apt/apt.conf.d/90assumeyes
 sudo apt-get update -y
 
 # Upgrade packages
-sudo apt-get upgrade -y
+# sudo apt-get upgrade -y
 
 # Install software
 # sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntujammy-security main"
 sudo apt-get install -y -qq \
   rpm \
   lsb-release \
