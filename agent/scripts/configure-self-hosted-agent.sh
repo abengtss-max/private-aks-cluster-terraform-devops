@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -y software-properties-common
 
 # Add the correct repository for the Ubuntu version on the VM
-#sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release -cs)-security main"
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release -cs)-security main"
 
 # Update the package lists again
 sudo apt-get update
@@ -73,7 +73,7 @@ sudo apt-get update -y
 
 # Install software
 # sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
-sudo add-apt-repository "deb http://security.ubuntu.com/ubuntujammy-security main"
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu jammy-security main"
 sudo apt-get install -y -qq \
   rpm \
   lsb-release \
