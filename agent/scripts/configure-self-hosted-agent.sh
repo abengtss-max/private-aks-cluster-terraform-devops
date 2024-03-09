@@ -51,7 +51,7 @@ sudo apt-get update -y
 sudo apt-get upgrade -y
 
 # Install software
-sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+# sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
 sudo apt-get install -y -qq \
   rpm \
   lsb-release \
@@ -61,7 +61,7 @@ sudo apt-get install -y -qq \
   git \
   iputils-ping \
   libcurl4 \
-  libicu60 \
+  libicu67 \
   libunwind8 \
   netcat \
   zip \
