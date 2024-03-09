@@ -73,6 +73,9 @@ sudo apt-get install -y -qq \
   gnupg-agent \
   apt-utils \
   software-properties-common
+  
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
