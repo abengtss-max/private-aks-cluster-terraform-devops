@@ -11,12 +11,8 @@ sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu $(lsb_release -cs
 
 # Update the package lists again
 sudo apt-get update
-
-# Rest of the script...
-
-# Add the missing GPG keys
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
-# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3B4FE6ACC0B21F32
+# Install at
+sudo apt-get install -y at
 
 # Update the package lists
 sudo apt-get update
